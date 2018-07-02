@@ -60,24 +60,24 @@ public class BoardView extends View {
 		calIconSize();
 
 		Resources r = getResources();
-		loadBitmaps(1, r.getDrawable(R.drawable.fruit_01));
-		loadBitmaps(2, r.getDrawable(R.drawable.fruit_02));
-		loadBitmaps(3, r.getDrawable(R.drawable.fruit_03));
-		loadBitmaps(4, r.getDrawable(R.drawable.fruit_04));
-		loadBitmaps(5, r.getDrawable(R.drawable.fruit_05));
-		loadBitmaps(6, r.getDrawable(R.drawable.fruit_06));
-		loadBitmaps(7, r.getDrawable(R.drawable.fruit_07));
-		loadBitmaps(8, r.getDrawable(R.drawable.fruit_08));
-		loadBitmaps(9, r.getDrawable(R.drawable.fruit_09));
-		loadBitmaps(10, r.getDrawable(R.drawable.fruit_10));
-		loadBitmaps(11, r.getDrawable(R.drawable.fruit_11));
-		loadBitmaps(12, r.getDrawable(R.drawable.fruit_12));
-		loadBitmaps(13, r.getDrawable(R.drawable.fruit_13));
-		loadBitmaps(14, r.getDrawable(R.drawable.fruit_14));
-		loadBitmaps(15, r.getDrawable(R.drawable.fruit_15));
-		loadBitmaps(16, r.getDrawable(R.drawable.fruit_17));
-		loadBitmaps(17, r.getDrawable(R.drawable.fruit_18));
-		loadBitmaps(18, r.getDrawable(R.drawable.fruit_19));
+		loadBitmaps(1, r.getDrawable(R.drawable.gitcat_1));
+		loadBitmaps(2, r.getDrawable(R.drawable.gitcat_2));
+		loadBitmaps(3, r.getDrawable(R.drawable.gitcat_3));
+		loadBitmaps(4, r.getDrawable(R.drawable.gitcat_4));
+		loadBitmaps(5, r.getDrawable(R.drawable.gitcat_5));
+		loadBitmaps(6, r.getDrawable(R.drawable.gitcat_6));
+		loadBitmaps(7, r.getDrawable(R.drawable.gitcat_7));
+		loadBitmaps(8, r.getDrawable(R.drawable.gitcat_8));
+		loadBitmaps(9, r.getDrawable(R.drawable.gitcat_9));
+		loadBitmaps(10, r.getDrawable(R.drawable.gitcat_10));
+		loadBitmaps(11, r.getDrawable(R.drawable.gitcat_11));
+		loadBitmaps(12, r.getDrawable(R.drawable.gitcat_12));
+		loadBitmaps(13, r.getDrawable(R.drawable.gitcat_13));
+		loadBitmaps(14, r.getDrawable(R.drawable.gitcat_14));
+		loadBitmaps(15, r.getDrawable(R.drawable.gitcat_15));
+		loadBitmaps(16, r.getDrawable(R.drawable.gitcat_16));
+		loadBitmaps(17, r.getDrawable(R.drawable.gitcat_17));
+		loadBitmaps(18, r.getDrawable(R.drawable.gitcat_19));
 	}
 
 	/**

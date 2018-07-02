@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-	android:background="@drawable/mainbg"
+	android:background="@drawable/mainbg2"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     >
@@ -8,8 +8,9 @@
     			android:layout_width="wrap_content"
     			android:layout_height="wrap_content"
     			android:layout_centerInParent="true"
-    			android:background="@drawable/buttons_bg1"
-    			android:src="@drawable/buttons_play"/>
+				android:background="@drawable/button_go"
+    			android:src="@drawable/button_go"/>
+
     <ImageView android:id="@+id/title_img"
     		android:layout_width="wrap_content"
     		android:layout_height="wrap_content"
@@ -37,8 +38,8 @@
     	android:paddingBottom="5dip"
     	/>
     <whu.iss.sric.view.GameView
-    	android:layout_width="wrap_content" 
-    	android:layout_height="wrap_content" 
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
     	android:id="@+id/game_view"
     	android:visibility="gone"
     	android:layout_below="@id/timer"
@@ -67,7 +68,7 @@
 	    <ImageButton android:id="@+id/tip_btn"
 	    			android:layout_width="wrap_content"
 	    			android:layout_height="wrap_content"
-	    			android:background="@drawable/light_bulb"
+	    			android:background="@drawable/tips"
 	    			android:visibility="gone"
 	    			/>
 	     <TextView android:id="@+id/text_tip_num"
@@ -78,5 +79,5 @@
 	    			android:visibility="gone"
 	    			android:text="3"
 	    			android:textSize="15sp"/>
-    </LinearLayout>			
+    </LinearLayout>
 </RelativeLayout>
