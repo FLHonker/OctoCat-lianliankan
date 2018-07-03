@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="hello">Hello World, MainActivity!</string>
-    <string name="app_name">连连看</string>
+    <string name="app_name">OctoCat连连看</string>
     <string name="time">所用时间为：$秒</string>
     <string name="quit">退出</string>
     <string name="sure_quit">确定退出游戏？</string>
