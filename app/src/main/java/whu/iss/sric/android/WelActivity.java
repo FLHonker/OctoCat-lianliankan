@@ -32,6 +32,8 @@ public class WelActivity extends Activity
 	private ImageView clock;
 	private TextView textRefreshNum;
 	private TextView textTipNum;
+	private ImageView imgLefttime;
+	private TextView textLeftTime;
 	
 	private MediaPlayer player;
 	
@@ -46,6 +48,9 @@ public class WelActivity extends Activity
 			case 1:
 				dialog = new MyDialog(WelActivity.this,gameView,"失败！",gameView.getTotalTime() - progress.getProgress());
 				dialog.show();
+				break;
+			case 2:
+				textLeftTime.setText(gameView.getLeftTime() + "s");
 			}
 		}
 	};
@@ -64,6 +69,8 @@ public class WelActivity extends Activity
         progress = (SeekBar) findViewById(R.id.timer);
         textRefreshNum = (TextView) findViewById(R.id.text_refresh_num);
         textTipNum = (TextView) findViewById(R.id.text_tip_num);
+        imgLefttime = (ImageView) findViewById(R.id.lefttime_img);	//left time clock
+		textLeftTime = (TextView) findViewById(R.id.lefttime_txt);	//left time text
         //XXX
         progress.setMax(gameView.getTotalTime());
         
@@ -117,6 +124,8 @@ public class WelActivity extends Activity
     		clock.setVisibility(View.VISIBLE);
     		textRefreshNum.setVisibility(View.VISIBLE);
     		textTipNum.setVisibility(View.VISIBLE);
+    		imgLefttime.setVisibility(View.VISIBLE);
+    		textLeftTime.setVisibility(View.VISIBLE);
     		
     		btnRefresh.startAnimation(transIn);
     		btnTip.startAnimation(transIn);
@@ -141,6 +150,11 @@ public class WelActivity extends Activity
 	public void onTimer(int leftTime) {
 		Log.i("onTimer", leftTime+"");
 		progress.setProgress(leftTime);
+//		textLeftTime.setText("ssr");	//线程不安全的组件，只能在主线程中更新视图，我们可以采用handler通知主线程
+		//处理完成后给handler发送消息
+		Message msg = new Message();
+		msg.what = 2;
+		handler.sendMessage(msg);
 	}
 
 	@Override

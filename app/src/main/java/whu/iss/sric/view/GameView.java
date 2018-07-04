@@ -84,15 +84,15 @@ public class GameView extends BoardView {
 	}
 	
 	public static void initSound(Context context){
-		 soundPlay = new SoundPlay();
-	        soundPlay.initSounds(context);
-	        soundPlay.loadSfx(context, R.raw.choose, ID_SOUND_CHOOSE);
-	        soundPlay.loadSfx(context, R.raw.disappear1, ID_SOUND_DISAPEAR);
-	        soundPlay.loadSfx(context, R.raw.win, ID_SOUND_WIN);
-	        soundPlay.loadSfx(context, R.raw.lose, ID_SOUND_LOSE);
-	        soundPlay.loadSfx(context, R.raw.item1, ID_SOUND_REFRESH);
-	        soundPlay.loadSfx(context, R.raw.item2, ID_SOUND_TIP);
-	        soundPlay.loadSfx(context, R.raw.alarm, ID_SOUND_ERROR);
+		soundPlay = new SoundPlay();
+	    soundPlay.initSounds(context);
+		soundPlay.loadSfx(context, R.raw.choose, ID_SOUND_CHOOSE);
+	    soundPlay.loadSfx(context, R.raw.disappear1, ID_SOUND_DISAPEAR);
+		soundPlay.loadSfx(context, R.raw.win, ID_SOUND_WIN);
+		soundPlay.loadSfx(context, R.raw.lose, ID_SOUND_LOSE);
+		soundPlay.loadSfx(context, R.raw.item1, ID_SOUND_REFRESH);
+		soundPlay.loadSfx(context, R.raw.item2, ID_SOUND_TIP);
+		soundPlay.loadSfx(context, R.raw.alarm, ID_SOUND_ERROR);
 	}
 
 	public void setOnTimerListener(OnTimerListener timerListener){
@@ -433,5 +433,9 @@ public class GameView extends BoardView {
 			toolsChangedListener.onRefreshChanged(Refresh);
 			change();
 		}
+	}
+
+	public int getLeftTime() {
+		return this.leftTime;
 	}
 }
