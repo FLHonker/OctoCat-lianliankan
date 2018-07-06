@@ -15,6 +15,7 @@ import android.view.View.OnClickListener;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageButton;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.SeekBar;
 import android.widget.TextView;
@@ -22,7 +23,7 @@ import android.widget.TextView;
 public class WelActivity extends Activity
 	implements OnClickListener,OnTimerListener,OnStateListener,OnToolsChangeListener{
 	
-	private ImageButton btnPlay;
+	private Button btnPlay;
 	private ImageButton btnRefresh;
 	private ImageButton btnTip;
 	private ImageView imgTitle;
@@ -60,7 +61,7 @@ public class WelActivity extends Activity
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.welcome);
-        btnPlay = (ImageButton) findViewById(R.id.play_btn);
+        btnPlay = (Button) findViewById(R.id.play_btn);
         btnRefresh = (ImageButton) findViewById(R.id.refresh_btn);
         btnTip = (ImageButton) findViewById(R.id.tip_btn);
         imgTitle = (ImageView) findViewById(R.id.title_img);

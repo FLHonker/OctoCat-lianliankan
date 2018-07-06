@@ -4,12 +4,24 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     >
-    <ImageButton android:id="@+id/play_btn"
+    <!--<ImageButton android:id="@+id/play_btn"-->
+		<!--android:layout_width="wrap_content"-->
+    	<!--android:layout_height="wrap_content"-->
+    	<!--android:layout_centerInParent="true"-->
+		<!--android:background="@drawable/button_go"-->
+    	<!--android:src="@drawable/button_go"/>-->
+	<Button
+		android:id="@+id/play_btn"
 		android:layout_width="wrap_content"
-    	android:layout_height="wrap_content"
-    	android:layout_centerInParent="true"
-		android:background="@drawable/button_go"
-    	android:src="@drawable/button_go"/>
+		android:layout_height="wrap_content"
+		android:layout_centerInParent="true"
+		android:text="Play game"
+		android:layout_weight="0.06"
+		android:elevation="0dp"
+		android:padding="12px"
+		android:background="@drawable/button_play"
+		android:textColor="#faf7fa"
+		android:textSize="18dp"/>
 
     <ImageView android:id="@+id/title_img"
     	android:layout_width="wrap_content"
